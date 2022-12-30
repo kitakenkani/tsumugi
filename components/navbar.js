@@ -82,7 +82,7 @@ const Navbar = props => {
                                 <NextLink href="https://teket.jp/g/2s8sflppts" passHref>
                                     <MenuItem as={Link}>Tickets</MenuItem>
                                 </NextLink>
-                                <MenuItem as={Link} href="https://github.com/kentarokitamura">View Source</MenuItem>
+                                <MenuItem as={Link} href="https://github.com/kitakenkani">View Source</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
