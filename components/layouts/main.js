@@ -17,11 +17,11 @@ const Main = ({ children, router }) => {
                 <meta name="twitter:card" ntent="summary_large_image" />
                 <meta name="twitter:site" content="@TumugiMO" />
                 <meta name="twitter:creator" content="@kitakenkani" />
-                <meta name="twitter:image" content="main.jpg" />
+                <meta name="twitter:image" content="https://tsumugi.vercel.app/images/main.jpg" />
                 <meta property="og:site_name" content="マンドリンオーケストラ紬" />
                 <meta name="og:title" content="マンドリンオーケストラ紬" />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="main.jpg" />
+                <meta property="og:image" content="https://tsumugi.vercel.app/images/main.jpg" />
 
                 <title>マンドリンオーケストラ紬</title>
             </Head>
