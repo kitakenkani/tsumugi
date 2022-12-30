@@ -4,7 +4,7 @@
   "description": "Kentaro's website",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
-    "build": "next build",
+    "build": "NODE_OPTIONS='--openssl-legacy-provider' next build",
     "prettier": "prettier -write .",
     "lint": "next lint"
   },
