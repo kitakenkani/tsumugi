@@ -4,7 +4,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from "../components/section"
 import Paragraph from "../components/paragraph"
 import { GridItem } from "../components/grid-item"
-import { IoLogoTwitter, IoTicket } from 'react-icons/io5'
+import { IoLogoTwitter, IoTicket, IoLogoYoutube } from 'react-icons/io5'
 
 import Carousel from '../components/Carousel'
 import { capsFirst } from '../utils'
@@ -33,9 +33,7 @@ const Page = ({ data, recomend }) => {
 
     return (
         <Container>
-            <Box display={{ md: 'flex' }}
-
-            >
+            <Box display={{ md: 'flex' }}>
                 <Box flexGrow={1}
                     _before={{
                         content: '""',
@@ -94,8 +92,6 @@ const Page = ({ data, recomend }) => {
                     </Flex>
                 ))}
             </Carousel>
-
-
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
                     About us
@@ -121,12 +117,17 @@ const Page = ({ data, recomend }) => {
                     <ListItem>
                         <Link href='https://twitter.com/TumugiMO' target="_blank">
                             <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoTwitter} />}>
-                                @TumugiMO
+                                Twitter
                             </Button>
                         </Link>
                         <Link href='https://teket.jp/g/2s8sflppts' target="_blank">
                             <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoTicket} />}>
-                                マンドリンオーケストラ紬
+                                teket
+                            </Button>
+                        </Link>
+                        <Link href='https://www.youtube.com/@user-wr4ef2ld1n' target="_blank">
+                            <Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoYoutube} />}>
+                                Youtube
                             </Button>
                         </Link>
                     </ListItem>
