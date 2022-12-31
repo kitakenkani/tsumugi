@@ -63,7 +63,7 @@ const Navbar = props => {
                     <LinkItem href="/concert" path={path}>
                         Concerts
                     </LinkItem>
-                    <a href="https://teket.jp/g/2s8sflppts" path={path}>
+                    <a href="https://teket.jp/g/2s8sflppts" target="_blank">
                         Tickets
                     </a>
                 </Stack>
@@ -79,15 +79,11 @@ const Navbar = props => {
                                 <NextLink href="/concert" passHref>
                                     <MenuItem as={Link}>Concerts</MenuItem>
                                 </NextLink>
-                                <NextLink href="https://teket.jp/g/2s8sflppts" passHref>
-                                    <MenuItem as={Link}>Tickets</MenuItem>
-                                </NextLink>
-                                <MenuItem as={Link} href="https://github.com/kitakenkani">View Source</MenuItem>
+                                <MenuItem as={Link} href="https://teket.jp/g/2s8sflppts" isExternal>Tickets</MenuItem>
                             </MenuList>
                         </Menu>
                     </Box>
                 </Box>
-
             </Container>
 
         </Box>
