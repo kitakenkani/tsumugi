@@ -48,7 +48,7 @@ const Page = ({ data, recomend }) => {
 
                     }}
                 >
-                    <Heading as="h2" variant="page-title">
+                    <Heading as="h1" variant="page-title">
                         マンドリンオーケストラ紬
                     </Heading>
                     <p>Mandolin Orchestra TSUMUGI </p>
