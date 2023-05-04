@@ -30,7 +30,7 @@ export const getStaticProps = async (context) => {
 export const getStaticPaths = async () => {
     const data = await client.get({
         endpoint: 'categories',
-        queries: { filters: 'id[not_equals]1vocj_eon-j' }
+        queries: { filters: 'id[equals]tb6jxxz6fz1n[or]id[equals]97yg6yyc-7b' }
 
     })
 

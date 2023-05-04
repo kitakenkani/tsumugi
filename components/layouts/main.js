@@ -9,7 +9,7 @@ const Main = ({ children, router }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Tsumugi homepage" />
+                <meta name="description" content="マンドリンオーケストラ紬は、2022年に生まれたマンドリン団体です。" />
                 <meta name="author" content="Kentaro Kitamura" />
                 <meta name="author" content="マンドリンオーケストラ紬" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
@@ -25,25 +25,18 @@ const Main = ({ children, router }) => {
                 <meta name="twitter:card" ntent="summary_large_image" />
                 <meta name="twitter:site" content="@TumugiMO" />
                 <meta name="twitter:creator" content="@kitakenkani" />
-                <meta name="twitter:image" content="https://tsumugi.vercel.app/images/main.jpg" />
+                <meta name="twitter:image" content="https://tsumugi.vercel.app/images/tsumugi.jpeg" />
                 <meta property="og:site_name" content="マンドリンオーケストラ紬" />
                 <meta name="og:title" content="マンドリンオーケストラ紬" />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="https://tsumugi.vercel.app/images/main.jpg" />
+                <meta property="og:image" content="https://tsumugi.vercel.app/images/tsumugi.jpeg" />
 
                 <title>マンドリンオーケストラ紬</title>
             </Head>
 
             <Navbar path={router.asPath} />
 
-            <Container maxW={{
-                base: "100%",
-                sm: "35rem",
-                md: "43.75rem",
-                lg: "57.5rem",
-                xl: "75rem",
-                xxl: "87.5rem"
-            }} pt={14}>
+            <Container maxW="container.xl" pt={20}>
                 {children}
                 <Footer />
             </Container>
