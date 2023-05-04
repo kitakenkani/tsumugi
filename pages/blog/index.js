@@ -20,7 +20,6 @@ export const getStaticProps = async () => {
 
 
 const Blog = ({ data }) => {
-    console.log(data)
     return (
         <Layout title="ブログ一覧">
             <Container maxW="container.lg">
