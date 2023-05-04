@@ -17,7 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 const LinkItem = ({ href, path, children }) => {
-    const active = path === href
+    const active = path.includes(href)
     const inactivaColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
         <NextLink href={href}>
@@ -43,11 +43,11 @@ const Navbar = props => {
         >
             <Container display="flex"
                 p={2}
-                maxW="container.md"
+                maxW="container.full"
                 wrap="wrap"
                 align="center"
                 justify="space-between" >
-                <Flex align="center" mr={5}>
+                <Flex align="center" mt={2} mr={5}>
                     <Heading as="h1" size="lg" letterSpacing={'tighter'}>
                         <Logo />
                     </Heading>
@@ -63,6 +63,10 @@ const Navbar = props => {
                     <LinkItem href="/concert" path={path}>
                         Concerts
                     </LinkItem>
+                    <LinkItem href="/blog" path={path}>
+                        Blog
+                    </LinkItem>
+                    
                     <a href="https://teket.jp/g/2s8sflppts" target="_blank">
                         Tickets
                     </a>
@@ -78,6 +82,9 @@ const Navbar = props => {
                                 </NextLink>
                                 <NextLink href="/concert" passHref>
                                     <MenuItem as={Link}>Concerts</MenuItem>
+                                </NextLink>
+                                <NextLink href="/blog" passHref>
+                                    <MenuItem as={Link}>Blog</MenuItem>
                                 </NextLink>
                                 <MenuItem as={Link} href="https://teket.jp/g/2s8sflppts" isExternal>Tickets</MenuItem>
                             </MenuList>

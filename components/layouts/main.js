@@ -9,7 +9,7 @@ const Main = ({ children, router }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="Tsumugi homepage" />
+                <meta name="description" content="マンドリンオーケストラ紬は、2022年に生まれたマンドリン団体です。" />
                 <meta name="author" content="Kentaro Kitamura" />
                 <meta name="author" content="マンドリンオーケストラ紬" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
@@ -36,14 +36,7 @@ const Main = ({ children, router }) => {
 
             <Navbar path={router.asPath} />
 
-            <Container maxW={{
-                base: "100%",
-                sm: "35rem",
-                md: "43.75rem",
-                lg: "57.5rem",
-                xl: "75rem",
-                xxl: "87.5rem"
-            }} pt={14}>
+            <Container maxW="container.xl" pt={20}>
                 {children}
                 <Footer />
             </Container>
