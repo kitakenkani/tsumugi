@@ -22,9 +22,9 @@ export const getStaticProps = async () => {
 const Blog = ({ data }) => {
     return (
         <Layout title="ブログ一覧">
-            <Container maxW="container.lg">
+            <Container maxW="container.lg" >
                 <Heading as="h3" fontSize={40} mb={4}>記事一覧</Heading>
-                <SimpleGrid columns={[1, 1, 2]} gap={0}>
+                <SimpleGrid columns={[1, 1, 2]} gap={0} justifyItems="center">
                     {data.map((post, index) => (
                         <Section key={index}>
                                 <BlogGridItem

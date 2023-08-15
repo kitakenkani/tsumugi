@@ -34,7 +34,7 @@ export const getStaticProps = async () => {
 }
 
 const Page = ({ data, recomend }) => {
-
+    console.log(data)
     return (
         <Container>
             <Box display={{ md: 'flex' }}>
@@ -87,11 +87,12 @@ const Page = ({ data, recomend }) => {
 
                         <Flex justifyContent="space-between">
                             <HStack spacing={2}>
-                                <Tag size="sm" colorScheme="purple">
-                                    #紬2022
-                                </Tag>
+                                {post.categories.map((category, index)=>(
+                                    <Tag size="sm" colorScheme="purple">
+                                        #{category.name}
+                                    </Tag>
+                                ))}
                             </HStack>
-
                         </Flex>
                     </Flex>
                 ))}

@@ -88,8 +88,8 @@ export const BlogGridItem = ({ id, title, body, thumbnail, thumbnailurl, date })
                             <Heading fontSize="lg" >
                                 {title}
                             </Heading>
-                            <LinkOverlay href={`/blog/${id}`} target="_blank">
-                                <Text fontSize="sm">{body.slice(0, 50)}...</Text>
+                            <LinkOverlay href={`/blog/${id}`} target="_blank" h="14">
+                                <Text fontSize="sm" >{body.slice(0, 50)}...</Text>
                             </LinkOverlay>
                         </Stack>
                         <Stack mt="6" direction="row" spacing="4" align="center" borderTop="1px solid #525252">
