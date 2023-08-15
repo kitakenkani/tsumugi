@@ -9,7 +9,7 @@ const Main = ({ children, router }) => {
             <Head>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <meta name="description" content="マンドリンオーケストラ紬は、2022年に生まれたマンドリン団体です。" />
+                <meta name="description" content="マンドリンオーケストラ紬は、2022年に生まれたマンドリン団体です。" key="description" />
                 <meta name="author" content="Kentaro Kitamura" />
                 <meta name="author" content="マンドリンオーケストラ紬" />
                 <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
@@ -21,16 +21,17 @@ const Main = ({ children, router }) => {
                 <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#000000" />
                 <link rel="shortcut icon" href="/favicons/favicon.ico" />
                 <meta name="msapplication-TileColor" content="#ffffff" />
-                <meta name="twitter:title" content="マンドリンオーケストラ紬 ホームページ" />
-                <meta name="twitter:card" ntent="summary_large_image" />
+                <meta name="twitter:title" content="マンドリンオーケストラ紬 ホームページ" key="twitter:title" />
+                <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@TumugiMO" />
                 <meta name="twitter:creator" content="@kitakenkani" />
-                <meta name="twitter:image" content="https://tsumugi.vercel.app/images/tsumugi.jpeg" />
+                <meta name="twitter:image" content="https://tsumugi.vercel.app/images/tsumugi.jpeg" key="twitter:image" />
                 <meta property="og:site_name" content="マンドリンオーケストラ紬" />
-                <meta name="og:title" content="マンドリンオーケストラ紬" />
+                <meta name="og:title" content="マンドリンオーケストラ紬" key="og:title" />
                 <meta property="og:type" content="website" />
-                <meta property="og:image" content="https://tsumugi.vercel.app/images/tsumugi.jpeg" />
-
+                <meta property="og:image" content="https://tsumugi.vercel.app/images/tsumugi.jpeg" key="og:image" />
+                <meta name="og:description" content="マンドリンオーケストラ紬は、2022年に生まれたマンドリン団体です。" key="og:description" />
+                
                 <title>マンドリンオーケストラ紬</title>
             </Head>
 
