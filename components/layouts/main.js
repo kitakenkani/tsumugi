@@ -22,7 +22,7 @@ const Main = ({ children, router }) => {
                 <link rel="shortcut icon" href="/favicons/favicon.ico" />
                 <meta name="msapplication-TileColor" content="#ffffff" />
                 <meta name="twitter:title" content="マンドリンオーケストラ紬 ホームページ" key="twitter:title" />
-                <meta name="twitter:card" ntent="summary_large_image" />
+                <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:site" content="@TumugiMO" />
                 <meta name="twitter:creator" content="@kitakenkani" />
                 <meta name="twitter:image" content="https://tsumugi.vercel.app/images/tsumugi.jpeg" key="twitter:image" />
