@@ -14,17 +14,21 @@ import { client } from '../lib/client'
 export const getStaticProps = async () => {
     const data = await client.get({
         endpoint: "news",
-        queries: { filters: 'category[equals]1vocj_eon-j' }
+        queries: { filters: 'category[equals]1vocj_eon-j' },
     })
 
     const recomend = await client.get({
         endpoint: "concertdetail",
-        queries: { limit: 2 }
+        queries: 
+            { 
+                limit: 2,
+                orders: "updatedAt",   
+            },
     })
     return {
         props: {
             data: data.contents,
-            recomend: recomend.contents
+            recomend: recomend.contents,
         },
     };
 }
