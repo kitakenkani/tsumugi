@@ -235,12 +235,14 @@ const Article = ({ data }) => {
         <Layout>
             <Head>
                 <title>{title}</title>
-                <meta name="description" content={description} />
-                <meta property="og:title" content={title} />
-                <meta property="og:description" content={description} />
-                <meta property="og:image" content={image} />
-                <meta property="og:image:width" content="800" />
-                <meta property="og:image:height" content="600" />
+                <meta name="description" content={description} key="description" />
+                <meta name="twitter:title" content={description} key="twitter:title" />
+                <meta name="twitter:image" content={image} key="twitter:image"/>
+                <meta property="og:title" content={title} key="og:title" />
+                <meta property="og:description" content={description} key="og:description"/>
+                <meta property="og:image" content={image} key="og:image" />
+                <meta property="og:image:width" key="og:image:width" />
+                <meta property="og:image:height" content="600" key="og:image:height" />
             </Head>
             <Container>
                 <HStack alignItems="center" >
