@@ -34,7 +34,6 @@ export const getStaticProps = async () => {
 }
 
 const Page = ({ data, recomend }) => {
-    console.log(data)
     return (
         <Container>
             <Box display={{ md: 'flex' }}>
