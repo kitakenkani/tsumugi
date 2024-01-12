@@ -230,7 +230,6 @@ const Article = ({ data }) => {
     const title = data.title
     const description = data?.body
     const image = data?.thumbnail.url
-    
     return (
         <Layout>
             <Head>
