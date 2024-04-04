@@ -70,6 +70,9 @@ const Navbar = props => {
                     <a href="https://teket.jp/g/2s8sflppts" target="_blank">
                         Tickets
                     </a>
+                    <LinkItem href="/contact" path={path}>
+                        Contact
+                    </LinkItem>
                 </Stack>
                 <Box flex={1} align="right">
                     <ThemeToggleButton />
