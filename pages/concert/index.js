@@ -8,7 +8,7 @@ import { client } from '../../lib/client'
 export const getStaticProps = async () => {
     const data = await client.get({
         endpoint: "news",
-        queries: { filters: 'category[equals]97yg6yyc-7b[or]category[equals]tb6jxxz6fz1n' }
+        queries: { filters: 'category[equals]97yg6yyc-7b[or]category[equals]tb6jxxz6fz1n[or]category[equals]cz9ryyw04' }
     })
     return ({
         props: {
