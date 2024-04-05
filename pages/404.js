@@ -16,14 +16,14 @@ const NotFound = () => {
     if (router.asPath.startsWith("/concert")){
         return (
             <Container>
-                <Heading as="h1">Not Found</Heading>
+                <Heading as="h1">Comming Soon</Heading>
                 <Text>演奏会情報が見つかりませんでした</Text>
                 <Divider />
-                <Box my={6} align="center">
-                    <Text my={6}>最新の演奏会情報はTwitterでチェックしてください。</Text>
+                <Box my={12} align="center">
+                    <Text my={12}>最新の演奏会情報はTwitterでチェックしてください。</Text>
                     <NextLink href="https://twitter.com/tumugiMO" passHref>
                         <Button as="a" target="_blank" leftIcon={<IoLogoTwitter />}>
-                            @tumugiMOをフォローする
+                            @TumugiMOをフォローする
                         </Button>
                     </NextLink>
                 </Box>
