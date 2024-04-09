@@ -9,11 +9,15 @@ import {
 } from '@chakra-ui/react';
 
 export default function Contact() {
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+        alert('未実装です。お手数ですが、ツイッター@TumugiMO までご連絡ください。'); // アラートを表示します
+    }
     return (
         <Container centerContent>
             <Heading as="h1" mb={6}>Contact</Heading>
 
-            <form acrion="/api/contact" method='post'>
+            <form onSubmit={handleSubmit} method='post'>
                 <FormControl id="name" isRequired>
                     <FormLabel>Name</FormLabel>
                     <Input placeholder='Your Name' />
