@@ -28,7 +28,7 @@ export default function Contact() {
                 </FormControl>
                 <FormControl>
                     <FormLabel>Message</FormLabel>
-                    <Input placeholder='Your Message' />
+                    <Textarea placeholder='Your Message' />
                 </FormControl>
                 <Button 
                     mt={4}
