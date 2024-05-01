@@ -87,7 +87,7 @@ const Page = ({ data, recomend }) => {
                         <Flex justifyContent="space-between">
                             <HStack spacing={2}>
                                 {post.categories.map((category, index)=>(
-                                    <Tag size="sm" colorScheme="purple">
+                                    <Tag size="sm" colorScheme="purple" key={index}>
                                         #{category.name}
                                     </Tag>
                                 ))}
