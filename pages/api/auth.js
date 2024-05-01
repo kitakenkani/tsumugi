@@ -1,11 +1,15 @@
-export default function handler(req, res) {
-    if (req.method === 'POST') {
-        const { password } = req.body;
-        console.log(password)
-        if ( password === 'a' ) {
-            return res.status(200).json({ authenticated: true});
-        }
-        return res.status(401).json({ authenticated: false});
-    }
-    return res.status(405).json({ message: 'Method not allowed' });
+import { signIn } from "../../auth";
+
+export default async function handler(req, res) {
+    try {
+        const { email, password } = req.body;
+        await signIn('credentials', { email, password })
+        res.status(200).json({ success: true })
+     } catch (error){
+        if (error.type === 'CredentialsSignin') {
+            res.status(401).json({ error: 'Invalid credentials.' })
+          } else {
+            res.status(500).json({ error: 'Something went wrong.' })
+          }
+     }
 }
